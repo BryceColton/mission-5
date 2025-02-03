@@ -1,8 +1,34 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
+﻿
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <!-- Page Heading -->
+    <h1 class="mt-4">
+        <i class="fa-solid fa-seedling text-success"></i> Welcome to My Landscaping Hobby
+    </h1>
+
+    <!-- Intro Paragraph -->
+    <p class="lead">Landscaping has been a passion of mine for years. I love transforming outdoor spaces into beautiful and functional environments.</p>
+
+    <!-- Images -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="~/images/landscape1.jpg" height="400" alt="Beautiful Landscape">
+        </div>
+        <div class="col-md-6">
+            <img src="~/images/landscape2.jpeg" height="400" alt="Garden Design">
+        </div>
+    </div>
+
+    <!-- Hobby Description -->
+    <div class="mt-4">
+        <p>Landscaping combines creativity and science to design outdoor areas that are both aesthetically pleasing and environmentally sustainable. I enjoy planning and implementing landscape designs, selecting plants, and incorporating water features to enhance outdoor spaces.</p>
+        <p>Whether it's designing a home garden, installing a sprinkler system, or maintaining a lush green lawn, landscaping provides a sense of accomplishment and connection to nature.</p>
+    </div>
+
+    <!-- Navigation to Second Page -->
+    <div class="mt-4">
+        <a asp-controller="Home" asp-action="Details" class="btn btn-secondary">
+            Learn More About Landscaping <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
 </div>
+
